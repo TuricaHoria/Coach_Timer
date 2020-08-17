@@ -1,0 +1,3 @@
+include ':baseappsetup'
+include ':app'
+rootProject.name = "Coach Timer"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1633115956/Zignyl_Employee_App.iml" filepath="$PROJECT_DIR$/.idea/modules/1633115956/Zignyl_Employee_App.iml" group="Zignyl_Employee_App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/461601990/app.iml" filepath="$PROJECT_DIR$/.idea/modules/461601990/app.iml" group="Zignyl Employee App/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2024547614/calendarlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/-2024547614/calendarlibrary.iml" group="Zignyl Employee App/calendarlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cstbaseappsetup.iml" filepath="$PROJECT_DIR$/.idea/modules/cstbaseappsetup.iml" group="Zignyl Employee App/cstbaseappsetup" />
+    </modules>
+  </component>
+</project>

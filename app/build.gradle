@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.zignyl.coachtimer"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation supportDependencies.appCompat
+    implementation supportDependencies.constraintLayout
+    implementation supportDependencies.material
+
+    implementation kotlinDependencies.coreKtx
+    implementation architectureDependencies.lifecycleExtensions
+
+    testImplementation testsDependencies.jUnit
+    androidTestImplementation testsDependencies.testRunner
+    androidTestImplementation testsDependencies.testEspresso
+
+    implementation navigationDependencies.navFragment
+    implementation navigationDependencies.navUI
+    implementation navigationDependencies.navFragmentKtx
+    implementation navigationDependencies.navUIKtx
+
+    implementation networkingDependencies.retrofit
+    implementation networkingDependencies.converterGson
+    implementation networkingDependencies.adapterRxJava
+
+    implementation reactiveDependencies.rxAndroid
+
+    implementation networkingDependencies.gson
+    implementation networkingDependencies.loggingInterceptor
+
+    implementation widgetDependencies.swipedecorator
+    implementation widgetDependencies.calendar
+
+    implementation imageLoaderDependencies.glide
+
+    implementation project(path: ':baseappsetup')
+
+}
